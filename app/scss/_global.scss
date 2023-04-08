@@ -1,0 +1,18 @@
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+        color: $a_hover_menu;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    &:hover{
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,173 @@
+ul{
+    list-style: none;
+}
+p{
+    line-height: normal;
+}
+.post-description{
+    color: #a1a4a9;
+}
+.category-benh{
+    .post-thumnail{
+        height: auto;
+    }
+}
+
+.category-sidebar{
+    .post-small-thumnail{
+        width: 160px;
+        height: auto;
+    }
+    .post-small{
+        border-bottom-style: dashed;
+        border-bottom-color: #afafaf;
+        border-bottom-width: 1px;
+        padding-bottom: 25px;
+        margin-bottom: 10px;
+        .post-content{
+            margin-top: 0;
+        }
+        .post-link{
+            height: auto;
+        }
+    }
+}
+.list-new-post{
+    padding: 0;
+    .new-item-list{
+        border-bottom-style: dashed;
+        border-bottom-color: #afafaf;
+        border-bottom-width: 1px;
+        padding: 15px 15px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            background: $green;
+            top: 22px;
+            left: 2px;
+        }
+        .item-link{
+            color: $black;
+            &:hover{
+                color: $a_hover_menu;
+            }
+        }
+    }
+    .new-item-list-nonebottom{
+        border-bottom-style: none;
+    }
+}
+@media(max-width: 575px) {
+    .item-mobile{
+        display: flex;
+        margin-top: 10px;
+        p{
+            margin-left: 10px;
+        }
+    }
+}
+.category-title{
+    h1{
+        color: $green;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    
+    hr{
+        border: 1px solid $green;
+    }
+}
+.new-title{
+    display: flex;
+    border-bottom-style: dashed;
+    border-bottom-color: #afafaf;
+    border-bottom-width: 1px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    .title{
+        width: 35%;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        @media(max-width: 575px) {
+            width: auto;
+            position: absolute;
+        }
+        a{
+            font-size: 18px;
+            color: $a_hover_menu;
+            &:hover{
+                color: #d9ae39;
+            }
+        }
+    }
+    .list-cat-child{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        @media(max-width: 575px) {
+            display: -webkit-box;
+            overflow: scroll;
+            flex-wrap: unset;
+            padding: 10px 10px 10px 0 ;
+            margin-top: 30px;
+        }
+        .item-cat-child{
+            padding-left: 9px;
+            .item-link{
+                color: $green;
+                font-weight: 400;
+                &:hover{
+                    color: #d9ae39;
+                }
+            }
+        }
+        .list-item-bottom{
+            position: relative;
+           
+            .item-link{
+                color: $black; 
+                font-weight: 700;
+            }
+            i{
+                border: 1px solid #ccc;
+                padding: 0 5px;
+                color: $green;
+            }
+        }
+    }
+}
+.category-tieuhoa,
+.category-tai-mui-hong,
+.category-namkhoa{
+    .new-item-list{
+        &::before{
+            content: '';
+            background: #212529;
+        }
+    }
+}
+.category-footer{
+    margin-bottom: 80px;
+    .post-small-thumnail{
+        width: 160px;
+    }
+    .post-small-title{
+        font-size: 16px;
+        line-height: normal;
+        .post-link{
+           height: 55px;
+        }
+    }
+    .item-new-title{
+        font-size: 11px;
+        font-weight: 700;
+        .item-link{
+            color: $a_hover_menu;
+        }
+    }
+}

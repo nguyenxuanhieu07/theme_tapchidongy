@@ -1,0 +1,36 @@
+.nam-khoa-link{
+    hr{
+        border: none;
+        border-bottom-style: dashed;
+        border-bottom-color: #afafaf;
+        border-bottom-width: 1px;
+    }
+  
+    a{
+        font-size: 13px;
+        font-weight: 400;
+        color: #b85147;
+        &:hover{
+            color: $a_hover_menu;
+        }
+    }
+    span{
+        font-size: 13px;
+    }
+    margin-bottom: 20px;
+}
+.nam-khoa-title{
+    h1{
+        font-size: 26px;
+        color: $green;
+    }
+    hr{
+        border: 1px solid $green;
+    }
+}
+.nam-khoa-new{
+    margin-bottom: 50px;
+    .post-thumnail{
+        height: auto;
+    }
+}

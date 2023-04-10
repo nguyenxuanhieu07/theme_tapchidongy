@@ -2,84 +2,23 @@
 
 get_header();
 ?>
-    <section class="home-post">
+    <?php get_template_part('blocks/home','top-post'); ?>
+    <?php get_template_part('blocks/home','popular-post'); ?>
+    
+    <section class="home-category">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="post">
-                        <a href="#" class="post-thumnail"><img class="post-img" src="<?php echo get_template_directory_uri(); ?>/images/section01/thuoc-tadalafil-255x155.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-title">
-                                <a href="#" class="post-link">Thuốc Tadalafil điều trị rối loạn cương dương có thực sự hiệu quả? Giá bao…</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <a href="#" class="post-thumnail"><img class="post-img" src="<?php echo get_template_directory_uri(); ?>/images/section01/ruou-bim-bip-255x155.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-title">
-                                <a href="#" class="post-link">Rượu bìm bịp chữa liệt dương giúp nam giới khôi phục bản lĩnh phòng the</a>
-                            </h3>
-                        </div>
-                    </div>
+                <div class="col-md-9">
+                    <?php dynamic_sidebar('homepage-middle-post') ?>
                 </div>
-                <div class="col-md-6">
-                    <div class="post">
-                        <a href="#" class="post-thumnail-big"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/cach-kiem-tinh-trung-540x303.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-title-big">
-                                <a href="#" class="post-link">Cách kiểm tra tinh trùng bằng mắt thường, tinh dịch đồ chuẩn xác nhất</a>
-                            </h3>
-                        </div>
-                        <p class="post-description">Tinh trùng là một trong những yếu tố quyết định đến khả năng sinh sản của nam giới. Vì vậy khi khó có con các cặp vợ chồng nên tìm cách kiểm tra tinh trùng…</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="post post-small">
-                        <a href="#" class="post-small-thumnail"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/co-che-dieu-tri-cua-phu-khang-tan-540x351.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-small-title">
-                                <a href="#" class="post-link">Bác sĩ Lê Phương trị bệnh phụ khoa có tốt không? Người bệnh nói gì</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="post post-small">
-                        <a href="#" class="post-small-thumnail"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/dieu-tri-xuat-tinh-som-bang-thuoc-nam-tot-khong-540x354.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-small-title">
-                                <a href="#" class="post-link">Điều trị xuất tinh sớm bằng thuốc nam: Top 12 bài thuốc giúp quý ông "bắn đâu trúng đấy"</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="post post-small">
-                        <a href="#" class="post-small-thumnail"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/stud-100-dai-dien-540x402.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-small-title">
-                                <a href="#" class="post-link">Stud 100 Chính Hãng Dùng Thế Nào Tốt? Cách Nhận Biết Hàng Thật Giả</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="post post-small">
-                        <a href="#" class="post-small-thumnail"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/dieu-tri-benh-vang-tinh-trung-bang-thuoc-tay-y-540x359.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-small-title">
-                                <a href="#" class="post-link">Top 5 cách chữa tinh trùng màu vàng mà chàng nên biết</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="post post-small">
-                        <a href="#" class="post-small-thumnail"><img src="<?php echo get_template_directory_uri(); ?>/images/section01/dieu-tri-di-tinh-bang-dong-y-the-duong-hu-540x358.jpg" alt=""></a>
-                        <div class="post-content">
-                            <h3 class="post-small-title">
-                                <a href="#" class="post-link">Điều trị di tinh bằng đông y: Top 13 bài thuốc cho hiệu quả và lưu ý quan trọng</a>
-                            </h3>
-                        </div>
-                    </div>
+                <div class="col-md-3 sidebar-category">
+                    <?php dynamic_sidebar('homepage-left-post') ?>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home-post-lore">
+
+    <!-- <section class="home-post-lore">
         <div class="container">
             <a class="home-post-title" href="#">Kiến Thức Bệnh</a>
             <div class="row">
@@ -165,9 +104,9 @@ get_header();
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="home-category">
+    <!-- <section class="home-category">
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
@@ -609,6 +548,6 @@ get_header();
                 </div>
             </div>
         </div>
-    </section>
+    </section>  -->
 <?php
 get_footer();

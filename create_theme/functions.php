@@ -164,8 +164,7 @@ function createtheme_widgets_init() {
 			'after_widget'  => '</section>',
 		)
 	);
-	register_widget('Footer_List_Link');
-	register_widget('Category_Page_Benh');
+
 }
 add_action( 'widgets_init', 'createtheme_widgets_init' );
 
@@ -216,5 +215,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-// thay thế menu bootstrap
-require get_template_directory() . '/theme-function.php';
+require get_template_directory() . '/core/theme-function.php';
